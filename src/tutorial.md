@@ -21,7 +21,8 @@ Palette fields can have the following types:
     - ex. `"#80ff40"`
 - Multicolor
     - A single or list of 6 or 8 digit hexadecimal color strings
-    - Each of the corresponding game items uses a random color from a list
+    - Each of the corresponding game items uses a random color from the list
+    - List must have at least one color. There is no upper limit for the number of colors.
     - ex. `["#19cc19", "#26bf19", "#33cc19"]`
 - Polygon
     - A list of 2D points defining a closed polygon
@@ -39,7 +40,7 @@ All fields are optional.
 
 Instead of defining the standard palette fields, a palette can define a single field called `priority`, with a list of strings that refer to other palettes to be loaded. If a field is not present in a palette in the list, the game will try to use the field in the next palette in the list.
 
-```
+```toml
 priority = ["first", "second", "third"]
 ```
 

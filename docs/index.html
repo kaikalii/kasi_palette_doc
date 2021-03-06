@@ -183,7 +183,8 @@
 <li>Multicolor
 <ul>
 <li>A single or list of 6 or 8 digit hexadecimal color strings</li>
-<li>Each of the corresponding game items uses a random color from a list</li>
+<li>Each of the corresponding game items uses a random color from the list</li>
+<li>List must have at least one color. There is no upper limit for the number of colors.</li>
 <li>ex. <code>[&quot;#19cc19&quot;, &quot;#26bf19&quot;, &quot;#33cc19&quot;]</code></li>
 </ul>
 </li>
@@ -201,7 +202,7 @@
 <p>All fields are optional.</p>
 <h2 id="meta-palettes"><a class="header" href="#meta-palettes">Meta Palettes</a></h2>
 <p>Instead of defining the standard palette fields, a palette can define a single field called <code>priority</code>, with a list of strings that refer to other palettes to be loaded. If a field is not present in a palette in the list, the game will try to use the field in the next palette in the list.</p>
-<pre><code>priority = [&quot;first&quot;, &quot;second&quot;, &quot;third&quot;]
+<pre><code class="language-toml">priority = [&quot;first&quot;, &quot;second&quot;, &quot;third&quot;]
 </code></pre>
 <h2 id="example-palettes"><a class="header" href="#example-palettes">Example Palettes</a></h2>
 <p>This palette makes leaves rainbow colors:</p>
